@@ -1,0 +1,888 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Heuristics</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/services/service-1/assets/css/service-1.css" />
+<link href="static/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/heroes/hero-1/assets/css/hero-1.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/testimonials/testimonial-4/assets/css/testimonial-4.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-3/assets/css/contact-3.css" />
+</head>
+<body style="background-color: rgb(233, 240, 239);">
+    
+
+  <!-- Header Section -->
+  
+  <header>
+    <div class="header-row bg-dark text-white py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span>Welcome to SYSTEM HEURISTICS</span>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="https://api.whatsapp.com/send?phone=03034648875" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width: 20px; height: 20px;"></a>
+                    <a href="#" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 20px; height: 20px;"></a>
+                    <a href="mailto:umerc2161@gmail.com" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo" style="width: 20px; height: 20px;"></a>
+                    <a href="https://www.facebook.com/yourpage" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 20px; height: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png" alt="Logo" width="40" height="40">
+                <span class="ml-2">SYSTEM HEURISTICS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="scrollToSection('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="scrollToSection('services')">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="scrollToSection('about')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="scrollToSection('contact')">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="ml-5">
+                    <a class="btn btn-primary" href="#" onclick="scrollToSection('contact')" >Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+  <!-- Home Section -->
+
+  <section class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull" style="background-image: url('./static/image/banner.jpg');">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+          <h1 class="display-3 fw-bold mb-3">Empowering Innovation
+            with Data-Driven Intelligence</h1>
+          <p class="lead mb-5">At System Heuristics, we are passionate about harnessing the power of data to revolutionize the way businesses operate</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-light btn-lg me-sm-3 mb-2 mb-sm-0" onclick="scrollToAbout()">About Us</button>
+            <button type="button" class="btn btn-light btn-lg" onclick="scrollToContact()">Contact Now</button>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+ 
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h3 class="fs-4 mb-3 text-secondary text-uppercase">About Us</h3>
+                <p class="lead">At System Heuristics, we are passionate about harnessing the power of data to revolutionize the way businesses operate. Our expert team specializes in Data Science and Machine Learning, providing cutting-edge solutions tailored to the unique needs of our clients. By leveraging advanced algorithms and analytical techniques, we help organizations transform raw data into actionable insights that drive growth and innovation. With a relentless commitment to excellence, we empower businesses to stay ahead in a rapidly evolving digital landscape.our AI expertise is second to none. Our talented team of professionals stays at the cutting edge of AI research and development, harnessing the latest advancements to build innovative and powerful solutions. We excel in leveraging AI technologies to transform businesses and create a lasting impact in an increasingly data-driven world.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card border-0">
+                    <img src="./static/image/a3.jpg" class="card-img-top img-fluid" alt="Innovation">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Innovation</h5>
+                        <p class="card-text">Our team is dedicated  of technological advancements in Data Science consistently integrating cutting-edge techniques and innovative approaches to provide our clients with a competitive edge in  industries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0">
+                    <img src="./static/image/a1.jpg" class="card-img-top img-fluid" alt="Reliability">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Reliability</h5>
+                        <p class="card-text">We are committed to delivering exceptional quality  in  our services, ensuring adherence to best practices and excellent customer support, which includes troubleshooting, training, and ongoing maintenance to exceed client expectations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0">
+                    <img src="./static/image/s9.jpg" class="card-img-top img-fluid" alt="Customization">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Customization</h5>
+                        <p class="card-text">We collaborate closely with our clients to understand their unique needs and develop tailored data-driven solutions that propel their business forward, utilizing our expertise in Data Science and Machine Learning to address specific challenges and optimize performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Slides Section-->
+
+<section class="py-3 py-md-5 py-xl-8">
+    <div class="container-fluid px-10x">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/static/image/a3.jpg" class="d-block w-100 half-height" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/image/a6.avif" class="d-block w-100 half-height" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/image/a5.avif" class="d-block w-100 half-height" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Service section -->
+<section id="services" class="py-5 py-xl-8">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="mb-4 display-5 text-center">Services</h2>
+                <p class="text-secondary mb-5 text-center">At System Heuristics, we offer a comprehensive range of services designed to help businesses unlock the full potential of their data. Our expertise in Data Science and Machine Learning enables us to create custom solutions that address unique challenges and drive growth. From predictive analytics and data visualization to natural language processing and deep learning, our services empower organizations to make smarter, data-driven decisions and stay ahead of the competition in today's dynamic digital landscape.</p>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+            </div>
+        </div>
+    </div>
+
+    <div class="container overflow-hidden">
+        <div class="row gy-5">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-1-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+                    </svg>
+                    <h5 class="m-2">Data Science</h5>
+                    <p class="m-0 text-secondary">Harness the power of data to gain valuable insights and make informed decisions.</p>
+                </div>
+            </div>
+            <!-- Add more service items following the same structure -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-2-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+                    </svg>
+                    <h5 class="m-2">Machine Learning</h5>
+                    <p class="m-0 text-secondary">Utilize advanced algorithms to enable computers to learn from data and improve over time.</p>
+                </div>
+            </div>
+            <!-- Add more service items following the same structure -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-3-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+                    </svg>
+                    <h5 class="m-2">Shopify Development</h5>
+                    <p class="m-0 text-secondary">Create stunning online stores tailored to your brand using Shopify's powerful platform.</p>
+                </div>
+            </div>
+            <!-- Add more service items following the same structure -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-4-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                    </svg>
+                    <h5 class="m-2">Laravel Development</h5>
+                    <p class="m-0 text-secondary">Build robust and scalable web applications using Laravel's elegant syntax and comprehensive toolkit.</p>
+                </div>
+            </div>
+            <!-- Add more service items following the same structure -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-5-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z" />
+                    </svg>
+                    <h5 class="m-2">Custom Web Development</h5>
+                    <p class="m-0 text-secondary">Craft tailor-made web solutions that meet your specific business requirements and objectives.</p>
+                </div>
+            </div>
+            <!-- Add more service items following the same structure -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="text-center px-xl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-6-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z" />
+                    </svg>
+                    <h5 class="m-2">Ecommerce Development</h5>
+                    <p class="m-0 text-secondary">Create powerful online stores that drive sales and enhance customer engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Team Section -->
+
+  <section class="our-team bg-dark">
+    <div class="container py-5">
+        <div class="row text-center text-white">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4">Our Team</h1>
+                <p class="lead mb-0">Meet Our Dedicated Team Making Dreams a Reality!</p>
+                <p class="lead" class="text-white">CEO
+                    System Heuristics
+                </p>
+            </div>
+        </div>
+    </div><!-- End -->
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+        </div>
+    </div>
+</section>
+<!--contact Section-->
+
+<section id="contact" class="bg-light py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
+        <div class="col-12 col-lg-6">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-11">
+              <h2 class="h1 mb-3">Get in touch</h2>
+              <p class="lead fs-4 text-secondary mb-5">We're always on the lookout to work with new clients. If you're interested in working with us, please get in touch in one of the following ways.</p>
+              <div class="d-flex mb-5">
+                <div class="me-4 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="mb-3">Address</h4>
+                  <address class="mb-0 text-secondary">Office No 7,A 5/9 H-block, Valencia Town, Lahore</address>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex mb-5 mb-sm-0">
+                    <div class="me-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="mb-3">Phone</h4>
+                      <p class="mb-0">
+                        <a class="link-secondary text-decoration-none" href="tel:+15057922430">(+92)3344377198</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="d-flex mb-0">
+                    <div class="me-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="mb-3">E-Mail</h4>
+                      <p class="mb-0">
+                        <a class="link-secondary text-decoration-none" href="info@systemheuristics.com">info@systemheuristics.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="me-4 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                    <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                    <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="mb-3">Opening Hours</h4>
+                  <div class="d-flex mb-1">
+                    <p class="text-secondary fw-bold mb-0 me-5">Mon - Fri</p>
+                    <p class="text-secondary mb-0">9am - 5pm</p>
+                  </div>
+                  <div class="d-flex">
+                    <p class="text-secondary fw-bold mb-0 me-5">Sat - Sun</p>
+                    <p class="text-secondary mb-0">9am - 2pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="bg-white border rounded shadow-sm overflow-hidden">
+  
+            <form action="#!">
+              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                <div class="col-12">
+                  <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" value="" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                      </svg>
+                    </span>
+                    <input type="tel" class="form-control" id="phone" name="phone" value="">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- pricing Section -->
+ <section id="pricing" class="pricing-content section-padding">
+    <div class="container">					
+        <div class="section-title text-center">
+            <h2>Pricing Plans</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>				
+        <div class="row text-center">									
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">		
+                            <h2>Starter</h2>
+                            <h1>$0</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price"></div>
+                        <a href="#" class="price_btn btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->	
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">		
+                            <h2>Personal</h2>
+                            <h1 class="price">$29</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price"></div>
+                        <a href="#" class="price_btn btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->	
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">		
+                            <h2>Ultimate</h2>
+                            <h1 class="price">$49</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price"></div>
+                        <a href="#" class="price_btn btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->			  
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
+</section>
+
+<!-- Testimonial  -->
+<section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase">Testimonials</h3>
+          <h2 class="display-5 mb-4">Our valued clients' testimonials speak volumes about our work's power.</h2>
+          <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Read More</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-lg-4">
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+              <blockquote class="bsb-blockquote-icon mb-3">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+              <figure class="d-flex align-items-center m-0 p-0">
+                <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="./assets/img/testimonial-img-1.jpg" alt="">
+                <figcaption class="ms-3">
+                  <h4 class="mb-1 h5">Luna John</h4>
+                  <h5 class="fs-6 text-secondary mb-0">Python Developer</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
+              <blockquote class="bsb-blockquote-icon mb-3">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+              <figure class="d-flex align-items-center m-0 p-0">
+                <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="./assets/img/testimonial-img-2.jpg" alt="">
+                <figcaption class="ms-3">
+                  <h4 class="mb-1 h5">Mark Smith</h4>
+                  <h5 class="fs-6 text-secondary mb-0">Data Scientsit</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="bsb-ratings text-warning mb-3" data-bsb-star="3" data-bsb-star-off="2"></div>
+              <blockquote class="bsb-blockquote-icon mb-3">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+              <figure class="d-flex align-items-center m-0 p-0">
+                <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="./assets/img/testimonial-img-3.jpg" alt="">
+                <figcaption class="ms-3">
+                  <h4 class="mb-1 h5">Michael Wilson</h4>
+                  <h5 class="fs-6 text-secondary mb-0">Software Development</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+              <blockquote class="bsb-blockquote-icon mb-3">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+              <figure class="d-flex align-items-center m-0 p-0">
+                <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="./assets/img/testimonial-img-4.jpg" alt="">
+                <figcaption class="ms-3">
+                  <h4 class="mb-1 h5">Luke Reeves</h4>
+                  <h5 class="fs-6 text-secondary mb-0">Data Analyst</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--footer Section-->
+
+<footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+            <span> System Heuristics</span> Our team is dedicated to staying at the forefront of technological advancements in Data Science and Machine Learning
+        </p>
+        <!-- Social icons -->
+        <div class="icons">
+            <a href="https://api.whatsapp.com/send?phone=03034648875" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width: 40px; height: 40px;"></a>
+            <a href="#" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 40px; height: 40px;"></a>
+            <a href="mailto:umerc2161@gmail.com" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo" style="width: 40px; height: 40px;"></a>
+            <a href="https://www.facebook.com/yourpage" class="text-white mx-2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 40px; height: 40px;"></a>
+        </div>
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span> Address: Office No 7,A 5/9 H-block, Valencia Town, Lahore</span></p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p> +92 334 4377198</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> systemheuristics.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+        <h2> System Heuristics</h2>
+        <p class="menu">
+            <a href="#"> Home</a> |
+            <a href="#"> About</a> |
+            <a href="#"> Services</a> |
+            <a href="#"> Portfolio</a> |
+            <a href="#"> Contact</a>
+        </p>
+        <p class="name"> Company Name &copy; 2016</p>
+    </div>
+</footer>
+
+  
+
+<style>
+
+.half-height {
+    height: 70vh; /* Set the height to 50% of the viewport height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+.pricing-content {
+        background-color: #f9f9f9;
+        padding: 60px 0;
+    }
+    .pricing_design {
+        background: #f0dcdc;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 40px rgba(0,0,0,0.07);
+        transition: all 0.3s ease-in-out;
+    }
+    .single-pricing {
+        padding: 50px 30px;
+        text-align: center;
+    }
+    .price-head h2 {
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+    .price-head h1 {
+        font-size: 48px;
+        color: #2a2a2a;
+        margin: 0;
+    }
+    .price-head span {
+        font-size: 16px;
+        color: #555;
+    }
+    ul {
+        list-style: none;
+        
+    }
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    ul li:last-child {
+        border-bottom: none;
+    }
+    ul li b {
+        color: #333;
+    }
+    .price_btn {
+        background-color: #007bff;
+        color: #fff;
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+    }
+    .price_btn:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+    .footer {
+        background-color: #414141;
+        width: 100%;
+        text-align: left;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 50px;
+        margin-top: 50px;
+      }
+      
+      .footer .footer-left,
+      .footer .footer-center,
+      .footer .footer-right {
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      .footer .footer-left {
+        width: 33%;
+        padding-right: 15px;
+      }
+      
+      .footer .about {
+        line-height: 20px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+      }
+      
+      .footer .about span {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .footer .icons {
+        margin-top: 25px;
+      }
+      
+      .footer .icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+      
+      .footer .footer-center {
+        width: 30%;
+      }
+      
+      .footer .footer-center i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+      
+      .footer .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+      
+      .footer .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: middle;
+        margin: 0;
+      }
+      
+      .footer .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+      }
+      
+      .footer .footer-center p a {
+        color: #0099ff;
+        text-decoration: none;
+      }
+      
+      .footer .footer-right {
+        width: 35%;
+      }
+      
+      .footer h2 {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: normal;
+        margin: 0;
+      }
+      
+      .footer h2 span {
+        color: #0099ff;
+      }
+      
+      .footer .menu {
+        color: #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+      }
+      
+      .footer .menu a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      .footer .menu a:hover {
+        color: #0099ff;
+      }
+      
+      .footer .name {
+        color: #0099ff;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+      }
+      
+      @media (max-width: 767px) {
+        .footer {
+          font-size: 14px;
+        }
+        .footer .footer-left,
+        .footer .footer-center,
+        .footer .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+        .footer .footer-center i {
+          margin-left: 0;
+        }
+      }
+</style>
+
+
+
+<script>
+
+function scrollToAbout() {
+            var aboutSection = document.getElementById('about');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            var contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
